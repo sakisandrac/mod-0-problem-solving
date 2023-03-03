@@ -1,8 +1,11 @@
 // 1. Given an array of strings, return only the strings that have exactly 4 characters.
 // Goal: Print out all the elements in an array that have exactly 4 characters 
-// if (characterLength === 4){
-//     print word 
-// }
+// Pseudocode:
+// Create an array with a few names that have both have names that are 4 characters or less and more
+// Use a for loop to iterate over all the elements in the array
+// Check if the length of each letter is 4 letters or less 
+// Print the elements in the array that are less than 4 letters 
+
 var names = ['Jack', 'Sally', 'Hank', 'Harry']
 
 function fourLetters(theArray){
@@ -17,9 +20,14 @@ fourLetters(names);
 
 // 2. Start with an array of strings with a mix of uppercase and lowercase letters. Print every word in all lowercase letters.
 //Goal: Print every word in the array with lowercase letters
-// // for (everyElementInArray){
-//     print lowerCaseLetters
-// }
+// Pseudocode:
+// Create an array with string elements that are using different cases 
+// Create a funtion that will pass in a paramenter with an array as the argument.
+// Use a for loop to iterate each element in the array
+// Use the method .toLowerCase() to turn all characters in the array into lowercase letters
+// console log to print the changed elements
+// call the function to check if it works! 
+
 
 var animals = ['BaT', 'COw', 'mOnKey']
 function lowerCased(theArray){
@@ -31,12 +39,31 @@ function lowerCased(theArray){
 lowerCased(animals);
 
 // 3. Given an array of strings, return only the words that begin with the letter "t".
+// Goal: Check if strings in an array start with the letter t and pring those string
+// Pseudocode:
+// Create an array with multiple strings that contain both words that have strings that start wtih t and ones that don't.
+// use a for loop to iterate over the array
+// make all letters to lower case
+// check if the string starts with t 
+// print out array 
 
-// 4. Start with an array of strings. Print only the words that include the letter combination "ing".
+var cars = ["Toyota", "Subaru", "Tesla", "Honda"]
+for (var i=0; i < cars.length; i++){
+    if (cars[i].toLowerCase().startsWith('t')){
+    console.log(cars[i]);
+    }
+}
+
+//4. Start with an array of strings. Print only the words that include the letter combination "ing".
 //Goal- print the words that end in "ing" in a given array
-// if (words include ing){
-//     print words
-// }
+// Pseudocode:
+// Create an array with strings that have both words ending in ing and words not ending in ing 
+// Create a function that has a parameter that passes in an array as an argument
+// Use a for loop to iterate through the array
+// Check if the element in the array ends with ing
+// Print the elements 
+// Research: method that checks characters in a string
+
 var verbs = ['running', 'walking', 'talk', 'eat']
 
 function ingWords(anArray){
