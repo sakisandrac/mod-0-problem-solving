@@ -78,4 +78,32 @@ ingWords(verbs);
 
 // 5. Start with an array of travel destinations. Print every travel destination in alphabetical order embedded in a sentence using string interpolation. For example, if the destination is "New York City", print something like "The next place I want to visit is New York City!" 
 
+
+//Goal: to use interpolation to print out a string with different destinations from an array 
+// Pseudo code: create an array with different cities
+// use a for loop to iterate over the array
+// in the loop Print out a string using interpolation for each city
+
+var cities = ["Boulder", "Paris", "Dubai", "Seattle"]
+for (var i = 0; i < cities.length; i++) {
+    console.log(`My next travel destination is: ${cities[i]}`);
+}
+
 // 6. Given a sentence with only lowercase letters, print the same sentence with the first letter of every word capitalized. For example, if you were given "Turing is the best", return "Turing Is The Best" instead!
+
+//Goal: print out a string with the first letter of every word capitalized
+//Pseudocode: create an variable assigned to a string
+// Use a method to change each first letter of each word 
+// Use toUpperCase to change each of those letters 
+// research methods that can change the index of a string
+
+var str = "turing is the best"
+
+var str2 = str.split('')
+
+str2[0] = str2[0].toUpperCase()
+str2[7] = str2[7].toUpperCase()
+str2[10] = str2[10].toUpperCase()
+str2[14] = str2[14].toUpperCase()
+
+console.log(str2.join(''))
